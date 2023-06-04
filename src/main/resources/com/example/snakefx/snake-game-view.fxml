@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#handle" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.snakefx.controllers.GameLoopController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="500.0" opacity="0.47" pickOnBounds="true">
+         <image>
+            <Image url="@../../../images/pics/background.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="25.0" layoutY="28.0" style="-fx-opacity: 1;" text="Current Score:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.0757097430785747">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.14473684132099152" green="0.5644736886024475" blue="0.5789473652839661" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.028021441772580147" green="0.2017543911933899" blue="0.05987248197197914" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="score_id" layoutX="124.0" layoutY="29.0" style="-fx-opacity: 1;">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.7697160582437124">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.031838856637477875" green="0.24561403691768646" blue="0.1601039618253708" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.0455111525952816" green="0.34917786717414856" blue="0.359649121761322" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <AnchorPane fx:id="gameOverPane" layoutX="119.0" layoutY="150.0" prefHeight="200.0" prefWidth="265.0" visible="false">
+         <children>
+            <Label layoutX="63.0" layoutY="84.0" text="Game Over" textAlignment="CENTER">
+               <font>
+                  <Font name="Consolas Bold" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
