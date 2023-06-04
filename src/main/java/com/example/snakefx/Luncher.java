@@ -1,3 +1,5 @@
+package com.example.snakefx;
+
 import com.example.snakefx.SnakeGame;
 
 public class Luncher {
